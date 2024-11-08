@@ -1,29 +1,27 @@
 <script>
-  import Button from "$lib/components/ui/button/button.svelte";
-  import { ArrowRight } from "lucide-svelte";
+  import Hero from "$lib/components/hero.svelte";
+  import { Button } from "$lib/components/ui/button";
+  import ArrowUpRight from "@tabler/icons-svelte/icons/arrow-up-right";
 </script>
 
 <main class="flex flex-col">
-  <section
-    class=" flex flex-col gap-8 h-fit sm:gap-16 items-center sm:justify-center justify-start py-16 sm:min-h-screen outline"
-  >
-    <div class="flex items-center justify-center flex-col gap-2">
-      <p class="font-sans font-medium text-base text-muted-foreground">
-        your vision, captured prefectly
-      </p>
-      <p
-        class="font-sans text-4xl sm:text-8xl leading-none tracking-wide font-semibold uppercase text-center"
-      >
-        brix vision
-      </p>
-    </div>
-    <div
-      class="flex *:capitalize justify-center items-center gap-6 max-w-md sm:w-screen"
-    >
-      <Button variant={"link"} size={"lg"}
-        >Browse Gallery
-        <ArrowRight class=" size-6" />
+  <Hero />
+  <section>
+    <div>
+      <p>about us</p>
+      <p>black vision is a full service production company</p>
+      <Button variant={"link"}>
+        more about us
+        <ArrowUpRight class=" size-4" />
       </Button>
+    </div>
+    <div>
+      <img src="" alt="about us" />
     </div>
   </section>
 </main>
+<footer class="w-full h-8 flex items-center justify-center py-2 mt-8">
+  <p class="font-sans font-medium text-base text-muted-foreground">
+    by momo391 and walid aissani
+  </p>
+</footer>
